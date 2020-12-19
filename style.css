@@ -1,0 +1,154 @@
+:root {
+  font-family: 'Nunito';
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.6rem;
+}
+
+body {
+  background-color: rgb(0, 132, 255);
+  color: #000;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+
+  transform: rotate(4deg);
+}
+
+.highlight {
+  background-color: rgba(248, 248, 248, 0.966);
+}
+
+.over {
+  background-color: #3787d111;
+}
+
+.form.active {
+  display: flex;
+}
+
+.boards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.board {
+  background-color: rgb(233, 232, 232);
+  border-radius: 4px;
+
+  margin: 0 16px;
+}
+
+.board__title {
+  padding: 16px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.dropzone {
+  min-width: 283px;
+  min-height: 200px;
+  padding: 16px;
+}
+
+.card {
+  width: 250px;
+  margin: 25px 0;
+  padding: 16px;
+
+  border-bottom: 2px solid rgb(0, 102, 255);
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card__status {
+  width: 30px;
+  height: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.card__status.red {
+  background-color: red;
+}
+
+.card__status.green {
+  background-color: green;
+}
+
+.card__status.yellow {
+  background-color: yellow;
+}
+
+.board__add_todo {
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.add_todo__btn {
+  font-size: 1.5rem;
+}
+
+.add_todo__btn:hover {
+  text-decoration: underline;
+}
+
+.form {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 40%;
+  height: 40vh;
+  padding: 26px;
+  background-color: rgb(233, 232, 232);
+}
+
+.form__button {
+    margin-top: 10px;
+    padding: 8px 0;
+
+    color: #fff;
+    background-color: rgb(0, 102, 255);
+    border: 0;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form__input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form__name {
+  font-size: 1.5rem;
+}
+
+.exit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exit__btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
